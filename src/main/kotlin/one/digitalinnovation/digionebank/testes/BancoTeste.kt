@@ -7,4 +7,9 @@ fun main(){
 
     println(digiOneBank.nome)
     println(digiOneBank.numero)
+
+    val filial = digiOneBank.copy(nome = " DigiOneBank  - agênia Portão")
+    println(filial.nome)
+    println(filial.numero)
+
 }
