@@ -8,6 +8,8 @@ class Pessoa {
     inner class Endereco {
         var rua: String = "Rua dos Pardais"
     }
+
+    fun pessoaInfo() = "$nome e $cpf \nEndereço: ${Endereco().rua}"
 }
 
 fun main() {
@@ -17,5 +19,6 @@ fun main() {
     println(daniel.nome)
     println(daniel.cpf)
     println(daniel.Endereco().rua)
+    println(daniel.pessoaInfo())
 
 }
