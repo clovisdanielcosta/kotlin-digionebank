@@ -1,7 +1,6 @@
 package one.digitalinnovation.digionebank.testes
 
 import one.digitalinnovation.digionebank.Analista
-import one.digitalinnovation.digionebank.Funcionario
 
 fun main() {
     val sergio = Analista(
@@ -10,8 +9,6 @@ fun main() {
         salario = 1250.0
         )
 
-    imprimeRelatorio(sergio)
+    ImprimeRelatorioFuncionario.imprime(sergio)
 
 }
-
-fun imprimeRelatorio(funcionario: Funcionario) = println(funcionario.toString())
